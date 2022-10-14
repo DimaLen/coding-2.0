@@ -29,8 +29,8 @@
         </a>
     </header>
     <div class="hero__content">
-        <div class="fade-slider">
-            <div class="fade-slider-item">
+        <ul class="fade-slider">
+            <li class="fade-slider-item fade-slider-item--style-tshirt fade-slider-item--visible">
                 <div class="fade-slider__text">
                  <h1 class="lined-text">
                     <div class="lined-text__word">THREE</div>
@@ -39,8 +39,24 @@
                     <div class="lined-text__word lined-text__word-color-yellow">TWO</div>
                   </h1>   
                 </div>
-            </div>
-        </div>        
+            </li>
+            <li class="fade-slider-item fade-slider-item--style-games">
+                <div class="fade-slider__text--game">
+                 <h1 class="lined-text">
+                    <div class="lined-text__word">Favorite games on</div>
+                    <div class="lined-text__word lined-text__word-color-yellow"> the best t-shirts</div>
+                  </h1>   
+                </div>
+            </li>
+            <li class="fade-slider-item fade-slider-item--style-presents">
+                <div class="fade-slider__text--gift">
+                 <h1 class="lined-text">
+                    <div class="lined-text__word">Gifts for</div>
+                    <div class="lined-text__word lined-text__word-color-yellow">loved ones</div>
+                  </h1>   
+                </div>
+            </li>
+        </ul>  
     </div>
 
     <aside class="sidebar">
@@ -91,114 +107,110 @@
     <div class="container">
     <ul class="filter">
        <li class="filter_item filter_link--active">
-        <a href="#" class="filter_link ">POPULAR</a>
+        <a href="#" data-filter="popular" class="filter_link ">POPULAR</a>
        </li>
        <li class="filter_item">
-        <a href="#" class="filter_link">NEW</a>
+        <a href="#" data-filter="new" class="filter_link">NEW</a>
        </li>  
        <li class="filter_item">
-        <a href="#" class="filter_link">BESTSCELLERS</a>
+        <a href="#" data-filter="bestsellers" class="filter_link">BESTSELLERS</a>
        </li>  
        <li class="filter_item">
-        <a href="#" class="filter_link">SPECIAL OFFER</a>
+        <a href="#" data-filter="specials"  class="filter_link">SPECIAL OFFER</a>
        </li>      
        <li class="filter_item">
-        <a href="#" class="filter_link">COMING SOON</a>
+        <a href="#" data-filter="soon" class="filter_link">COMING SOON</a>
        </li>        
     </ul> 
     
-    <ul class="products-list">
-        <li class="product--item">
-            <div class="products_price">
-                <div class="products_price-amount">25$</div>
+    <ul class="products__list">
+        <li class="products__item new bestsellers">
+          <div class="products__price">
+            <div class="products__price-amount">25$</div>
+          </div>
+          <div class="products__content">
+            <img src="./img/tshirts/tshirt_01.png" alt="bo-jack tshirt" class="products__img">
+            <div class="products__desc">
+              <div class="products__desc-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+              </div>
+              <a href="#" class="btn">Read more</a>
             </div>
-            <div class="products__content">
-                <img src="./img/tshirts/tshirt_01.png" alt="tshirt_01" class="products-img">
-                <div class="product_desc">
-                <div class="product_desc-text">
-                    Lorem ipsum dolor sit amet.
-                </div>
-                <a href="" class="btn">Read more</a>
-            </div>
-          </div> 
+          </div>
         </li>
-
-        <li class="product--item">
-            <div class="products_price">
-                <div class="products_price-amount">25$</div>
+        <li class="products__item new specials soon">
+          <div class="products__price">
+            <div class="products__price-amount">25$</div>
+          </div>
+          <div class="products__content">
+            <img src="./img/tshirts/tshirt_02.png" alt="bo-jack tshirt" class="products__img">
+            <div class="products__desc">
+              <div class="products__desc-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+              </div>
+              <a href="" class="btn">Read more</a>
             </div>
-            <div class="products__content">
-                <img src="./img/tshirts/tshirt_02.png" alt="tshirt_01" class="products-img">
-                <div class="product_desc">
-                <div class="product_desc-text">
-                    Lorem ipsum dolor sit amet.
-                </div>
-                <a href="" class="btn">Read more</a>
-            </div>
-          </div> 
+          </div>
         </li>
-
-        <li class="product--item product--item_color-black product--item_color-size">
-            <div class="products_price">
-                <div class="products_price-amount">25$</div>
+        <li class="products__item new popular specials products__item--color-black products__item--size-double">
+          <div class="products__price">
+            <div class="products__price-amount">29$</div>
+          </div>
+          <div class="products__content">
+            <img src="./img/tshirts/tshirt_03.png" alt="bo-jack tshirt" class="products__img">
+            <div class="products__desc">
+              <div class="products__desc-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+              </div>
+              <a href="" class="btn">Read more</a>
             </div>
-            <div class="products__content">
-                <img src="./img/tshirts/tshirt_03.png" alt="tshirt_01" class="products-img">
-                <div class="product_desc">
-                <div class="product_desc-text">
-                    Lorem ipsum dolor sit amet.
-                </div>
-                <a href="" class="btn">Read more</a>
-            </div>
-          </div> 
+          </div>
         </li>
-
-        <li class="product--item product--item_color-black product--item_color-size">
-            <div class="products_price">
-                <div class="products_price-amount">25$</div>
+        <li class="products__item new popular soon products__item--color-black products__item--size-double">
+          <div class="products__price">
+            <div class="products__price-amount">29$</div>
+          </div>
+          <div class="products__content">
+            <img src="./img/tshirts/tshirt_04.png" alt="bo-jack tshirt" class="products__img">
+            <div class="products__desc">
+              <div class="products__desc-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+              </div>
+              <a href="" class="btn">Read more</a>
             </div>
-            <div class="products__content">
-                <img src="./img/tshirts/tshirt_04.png" alt="tshirt_01" class="products-img">
-                <div class="product_desc">
-                <div class="product_desc-text">
-                    Lorem ipsum dolor sit amet.
-                </div>
-                <a href="" class="btn">Read more</a>
-            </div>
-          </div> 
+          </div>
         </li>
-
-        <li class="product--item">
-            <div class="products_price">
-                <div class="products_price-amount">25$</div>
+        <li class="products__item new specials soon">
+          <div class="products__price">
+            <div class="products__price-amount">25$</div>
+          </div>
+          <div class="products__content">
+            <img src="./img/tshirts/tshirt_05.png" alt="bo-jack tshirt" class="products__img">
+            <div class="products__desc">
+              <div class="products__desc-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+              </div>
+              <a href="" class="btn">Read more</a>
             </div>
-            <div class="products__content">
-                <img src="./img/tshirts/tshirt_05.png" alt="tshirt_01" class="products-img">
-                <div class="product_desc">
-                <div class="product_desc-text">
-                    Lorem ipsum dolor sit amet.
-                </div>
-                <a href="" class="btn">Read more</a>
-            </div>
-          </div> 
+          </div>
         </li>
-
-        <li class="product--item">
-            <div class="products_price">
-                <div class="products_price-amount">25$</div>
+        <li class="products__item new">
+          <div class="products__price">
+            <div class="products__price-amount">25$</div>
+          </div>
+          <div class="products__content">
+            <img src="./img/tshirts/tshirt_06.png" alt="bo-jack tshirt" class="products__img">
+            <div class="products__desc">
+              <div class="products__desc-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+              </div>
+              <a href="" class="btn">Read more</a>
             </div>
-            <div class="products__content">
-                <img src="./img/tshirts/tshirt_06.png" alt="tshirt_01" class="products-img">
-                <div class="product_desc">
-                <div class="product_desc-text">
-                    Lorem ipsum dolor sit amet.
-                </div>
-                <a href="" class="btn">Read more</a>
-            </div>
-          </div> 
+          </div>
         </li>
+      </ul>
+    
 
-    </ul>
     </div>
 </section>
 
@@ -378,6 +390,15 @@
 </footer>
 </div>
 
+
+
+
+
+
+<!-- scripts -->
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script src="./scripts/filter.js"></script>
+<script src="./scripts/slider.js"></script>
 <script src="./scripts/sidebar-menu.js"></script>
 </body>
 </html>
